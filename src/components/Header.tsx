@@ -24,9 +24,6 @@ export function Header() {
           <span className="wordmark__mark" aria-hidden="true">M</span>
           <span>The Mascot</span>
         </a>
-        <span className="header-status" aria-label="The Mascot is in development">
-          <span className="status-dot" aria-hidden="true" /> in development
-        </span>
         <nav
           className={`site-nav ${menuOpen ? "site-nav--open" : ""}`}
           id="primary-navigation"

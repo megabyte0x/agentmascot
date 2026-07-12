@@ -36,7 +36,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header__inner { position: relative; width: min(1120px, 100%); min-height: 62px; margin: 0 auto; padding: 8px 11px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 22px; border: 1px solid rgba(25,29,22,.1); border-radius: 999px; background: rgba(255,255,252,.8); box-shadow: var(--shadow-soft); backdrop-filter: blur(22px); }
 .wordmark { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: .95rem; font-weight: 750; letter-spacing: -.025em; text-decoration: none; white-space: nowrap; }
 .wordmark__mark { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid rgba(25,29,22,.14); border-radius: 50%; color: var(--ink); background: var(--lime); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .75rem; box-shadow: inset 0 1px rgba(255,255,255,.6); }
-.header-status { display: inline-flex; align-items: center; gap: 8px; margin: 0 auto; padding: 7px 12px; border-radius: 999px; color: #61675c; background: #f1f2ec; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .67rem; letter-spacing: .02em; }
 .status-dot { width: 7px; height: 7px; flex: 0 0 auto; border-radius: 50%; background: var(--lime-strong); box-shadow: 0 0 0 4px rgba(143,216,61,.14); }
 .site-nav { display: flex; align-items: center; gap: 25px; }
 .site-nav a { color: #64695f; font-size: .82rem; font-weight: 550; text-decoration: none; transition: color .18s ease; }
@@ -126,9 +125,10 @@ h1 { max-width: 980px; margin: 0 auto 25px; color: var(--ink); font-family: Iowa
 .state-card.is-active { box-shadow: 0 20px 48px rgba(54,73,35,.11), inset 0 0 0 2px rgba(143,216,61,.42); }
 .state-card__select { position: absolute; z-index: 3; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; border-radius: inherit; background: transparent; cursor: pointer; }
 .state-card__select:focus-visible { outline: 3px solid #6fa92d; outline-offset: -5px; }
-.state-card::after { position: absolute; right: -58px; bottom: -70px; width: 180px; height: 180px; border-radius: 50%; background: var(--lime-soft); content: ""; }
+.state-card::after { position: absolute; z-index: 0; right: -75px; bottom: -88px; width: 150px; height: 150px; border-radius: 50%; background: var(--lime-soft); content: ""; pointer-events: none; }
 .state-card--2::after { background: var(--blue-soft); }
 .state-card--3::after { background: var(--amber-soft); }
+.state-card > :not(.state-card__select) { position: relative; z-index: 1; }
 .state-card__signal { display: flex; height: 72px; margin-bottom: 44px; align-items: end; gap: 5px; }
 .state-card__signal i { display: block; width: 10px; border-radius: 9px; background: var(--lime-strong); animation: signal 1.9s ease-in-out infinite alternate; }
 .state-card__signal i:nth-child(1) { height: 20px; opacity: .5; animation-delay: -.5s; }
@@ -187,7 +187,6 @@ h1 { max-width: 980px; margin: 0 auto 25px; color: var(--ink); font-family: Iowa
 
 @media (max-width: 850px) {
   .site-header { padding-right: 16px; padding-left: 16px; }
-  .header-status { display: none; }
   .site-header__inner { gap: 9px; }
   .wordmark { margin-right: auto; }
   .menu-toggle { display: grid; flex: 0 0 auto; }
