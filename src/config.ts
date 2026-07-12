@@ -12,3 +12,6 @@ export const tallyUrl = (() => {
     return null;
   }
 })();
+
+export const agentMascotAppUrl = "https://app.agentmascot.app";
+export const macAppDmgUrl = `${agentMascotAppUrl}/downloads/the-mascot.dmg`;

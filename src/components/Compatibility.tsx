@@ -11,7 +11,9 @@ export function Compatibility() {
           <span>Codex</span>
         </div>
       </div>
-      <p className="compatibility__note">The Mascot is being shaped around the coding-agent workflows developers already use. Join the waitlist to follow its development.</p>
+      <p className="compatibility__note">
+        Create a personalized mascot for the coding-agent workflows you already use, then bring it to your desktop with the Mac app.
+      </p>
     </Section>
   );
 }

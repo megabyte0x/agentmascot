@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { WaitlistLink } from "./WaitlistLink";
+import { agentMascotAppUrl } from "../config";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,9 +34,11 @@ export function Header() {
         >
           <a href="#how-it-works" onClick={closeMenu}>How it works</a>
           <a href="#states" onClick={closeMenu}>States</a>
-          <a href="#waitlist" onClick={closeMenu}>Waitlist</a>
+          <a href="#get-the-app" onClick={closeMenu}>Get the App</a>
         </nav>
-        <WaitlistLink className="button--small">Join the waitlist</WaitlistLink>
+        <a className="button button--small" href={agentMascotAppUrl}>
+          Generate Personalized Mascot <span aria-hidden="true">↗</span>
+        </a>
         <button
           className="menu-toggle"
           type="button"

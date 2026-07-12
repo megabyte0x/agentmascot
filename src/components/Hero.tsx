@@ -1,7 +1,5 @@
 import { useReducedMotion } from "../hooks/useReducedMotion";
-
-const agentMascotAppUrl = "https://app.agentmascot.app";
-const macAppDmgUrl = `${agentMascotAppUrl}/downloads/the-mascot.dmg`;
+import { agentMascotAppUrl, macAppDmgUrl } from "../config";
 
 export function Hero() {
   const prefersReducedMotion = useReducedMotion();
@@ -18,10 +16,10 @@ export function Hero() {
           </p>
           <div className="hero__actions">
             <a className="button" href={agentMascotAppUrl}>
-              Generate your personalized desktop companion <span aria-hidden="true">↗</span>
+              Generate Personalized Mascot <span aria-hidden="true">↗</span>
             </a>
             <a className="text-link" href={macAppDmgUrl} download="The-Mascot.dmg">
-              Download the Mac app <span aria-hidden="true">↓</span>
+              Download Mac App <span aria-hidden="true">↓</span>
             </a>
           </div>
         </div>

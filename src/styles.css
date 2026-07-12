@@ -158,8 +158,11 @@ h1 { max-width: 980px; margin: 0 auto 25px; color: var(--ink); font-family: Iowa
 .final-cta .kicker { color: #b3bea8; }
 .final-cta h2 { max-width: 760px; color: #fff; }
 .final-cta p:not(.kicker) { max-width: 540px; margin: 24px 0 32px; color: #b6beb0; font-size: 1.04rem; line-height: 1.65; }
+.final-cta__actions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 12px; }
 .final-cta .button { border-color: var(--lime); color: var(--ink); background: var(--lime); box-shadow: 0 9px 26px rgba(167,232,90,.16); }
 .final-cta .button:hover { background: #b9f174; }
+.final-cta .text-link { border-color: rgba(255,255,255,.18); color: #fff; background: rgba(255,255,255,.07); }
+.final-cta .text-link:hover { background: rgba(255,255,255,.13); }
 .site-footer { margin-top: 30px; }
 .site-footer__inner { width: min(1120px,calc(100% - 48px)); min-height: 96px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .site-footer p { margin: 0; color: #7d8279; font-size: .77rem; }
@@ -212,8 +215,7 @@ h1 { max-width: 980px; margin: 0 auto 25px; color: var(--ink); font-family: Iowa
   .site-header { padding: 10px 10px 0; }
   .site-header__inner { min-height: 56px; padding: 6px 7px 6px 14px; }
   .site-header__inner { gap: 7px; }
-  .site-header .button { min-height: 38px; padding: 0 12px; font-size: .72rem; }
-  .site-header .button span { display: none; }
+  .site-header .button { display: none; }
   .wordmark { font-size: .84rem; }
   .wordmark__mark { width: 27px; height: 27px; }
   .menu-toggle { width: 38px; height: 38px; }
@@ -243,6 +245,7 @@ h1 { max-width: 980px; margin: 0 auto 25px; color: var(--ink); font-family: Iowa
   .workflow__list p { font-size: .97rem; }
   .final-cta { padding: 0 8px 8px; }
   .final-cta__inner { padding: 54px 24px; border-radius: 24px; }
+  .final-cta__actions > * { width: 100%; }
   .site-footer__inner { min-height: 82px; }
 }
 
