@@ -1,5 +1,7 @@
 import { useReducedMotion } from "../hooks/useReducedMotion";
-import { WaitlistLink } from "./WaitlistLink";
+
+const agentMascotAppUrl = "https://app.agentmascot.app";
+const macAppDmgUrl = `${agentMascotAppUrl}/downloads/the-mascot.dmg`;
 
 export function Hero() {
   const prefersReducedMotion = useReducedMotion();
@@ -15,8 +17,12 @@ export function Hero() {
             requests for input visible when it matters.
           </p>
           <div className="hero__actions">
-            <WaitlistLink>Join the waitlist</WaitlistLink>
-            <a className="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+            <a className="button" href={agentMascotAppUrl}>
+              Generate your personalized desktop companion <span aria-hidden="true">↗</span>
+            </a>
+            <a className="text-link" href={macAppDmgUrl} download="The-Mascot.dmg">
+              Download the Mac app <span aria-hidden="true">↓</span>
+            </a>
           </div>
         </div>
         <div className="hero__media">
