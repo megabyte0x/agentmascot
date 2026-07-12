@@ -56,19 +56,19 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero { position: relative; isolation: isolate; padding-top: 18px; }
 .hero::before { position: absolute; z-index: -2; top: -180px; left: 50%; width: min(1100px, 120vw); height: 760px; border-radius: 50%; background: radial-gradient(circle at 34% 48%, rgba(167,232,90,.34), transparent 36%), radial-gradient(circle at 72% 42%, rgba(247,201,148,.32), transparent 38%); filter: blur(24px); content: ""; transform: translateX(-50%); pointer-events: none; }
 .hero::after { position: absolute; z-index: -1; inset: 0 0 auto; height: 720px; opacity: .18; background-image: linear-gradient(rgba(22,25,20,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(22,25,20,.16) 1px, transparent 1px); background-size: 48px 48px; mask-image: radial-gradient(ellipse 62% 54% at 50% 32%, #000, transparent); content: ""; pointer-events: none; }
-.hero__inner { width: min(1120px, calc(100% - 48px)); margin: 0 auto; display: grid; justify-items: center; padding: 92px 0 100px; text-align: center; }
+.hero__inner { width: min(1120px, calc(100% - 48px)); margin: 0 auto; display: grid; justify-items: center; padding: 74px 0 96px; text-align: center; }
 .hero__copy { max-width: 900px; }
 .eyebrow, .kicker { display: flex; align-items: center; gap: 10px; margin: 0 0 20px; color: #5f675a; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .68rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
 .eyebrow { justify-content: center; width: fit-content; margin-right: auto; margin-left: auto; padding: 9px 13px; border: 1px solid rgba(25,29,22,.08); border-radius: 999px; background: rgba(255,255,252,.6); box-shadow: 0 4px 18px rgba(41,45,34,.04); }
 .eyebrow span { width: 6px; height: 6px; border-radius: 50%; background: var(--lime-strong); box-shadow: 0 0 0 4px rgba(143,216,61,.16); }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { text-wrap: balance; }
-h1 { max-width: 900px; margin: 0 auto 25px; color: var(--ink); font-family: Iowan Old Style, Baskerville, "Times New Roman", serif; font-size: clamp(3.7rem, 7.2vw, 6.9rem); font-weight: 600; letter-spacing: -.068em; line-height: .91; }
+h1 { max-width: 980px; margin: 0 auto 25px; color: var(--ink); font-family: Iowan Old Style, Baskerville, "Times New Roman", serif; font-size: clamp(3.7rem, 6vw, 5.9rem); font-weight: 600; letter-spacing: -.064em; line-height: .92; }
 .hero__lede { max-width: 665px; margin: 0 auto 32px; color: #646a60; font-size: 1.1rem; line-height: 1.65; }
 .hero__actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px; }
 .text-link { display: inline-flex; min-height: 50px; padding: 0 21px; align-items: center; gap: 8px; border: 1px solid rgba(25,29,22,.13); border-radius: 999px; color: var(--ink-soft); background: rgba(255,255,252,.67); font-size: .88rem; font-weight: 650; text-decoration: none; transition: transform .18s ease, background .18s ease; }
 .text-link:hover { background: var(--surface-solid); transform: translateY(-2px); }
-.hero__media { position: relative; width: min(980px, 100%); min-width: 0; margin-top: 86px; text-align: left; }
+.hero__media { position: relative; width: min(980px, 100%); min-width: 0; margin-top: 62px; text-align: left; }
 .hero__media-frame { position: relative; overflow: hidden; border: 1px solid rgba(18,23,16,.16); border-radius: 26px; background: #111510; box-shadow: var(--shadow-stage), 0 0 0 10px rgba(255,255,252,.44); }
 .hero__media-bar { position: relative; height: 44px; display: flex; align-items: center; justify-content: center; padding: 0 17px; border-bottom: 1px solid rgba(255,255,255,.08); background: #1c211b; }
 .window-dots { position: absolute; left: 17px; display: flex; gap: 6px; }
@@ -174,6 +174,13 @@ h1 { max-width: 900px; margin: 0 auto 25px; color: var(--ink); font-family: Iowa
 .hero__media { animation-delay: .34s; }
 .reveal-ready [data-reveal] { opacity: 0; transform: translateY(32px); transition: opacity .72s cubic-bezier(.2,.7,.25,1), transform .72s cubic-bezier(.2,.7,.25,1); }
 .reveal-ready [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+
+@media (min-width: 851px) and (max-height: 820px) {
+  .hero__inner { padding-top: 48px; padding-bottom: 76px; }
+  h1 { max-width: 980px; margin-bottom: 18px; font-size: clamp(4.2rem,5.7vw,5.25rem); }
+  .hero__lede { margin-bottom: 24px; line-height: 1.5; }
+  .hero__media { margin-top: 40px; }
+}
 
 @media (max-width: 850px) {
   .site-header { padding-right: 16px; padding-left: 16px; }
