@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">The Mascot</title>
+  <rect width="64" height="64" rx="16" fill="#11141b"/>
+  <path d="M18 34c0-11.046 8.954-20 20-20 4.032 0 7.786 1.194 10.925 3.246L44 22.17A13.95 13.95 0 0 0 38 20c-7.732 0-14 6.268-14 14s6.268 14 14 14c2.09 0 4.072-.458 5.852-1.28L48 51.352A19.9 19.9 0 0 1 38 54c-11.046 0-20-8.954-20-20Z" fill="#e8ecf3"/>
+  <circle cx="40.5" cy="33.5" r="4.5" fill="#a3e635"/>
+</svg>
