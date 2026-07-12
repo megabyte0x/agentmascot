@@ -18,7 +18,7 @@ export function Hero() {
             <a className="button" href={agentMascotAppUrl}>
               Generate Personalized Mascot <span aria-hidden="true">↗</span>
             </a>
-            <a className="text-link" href={macAppDmgUrl} download="The-Mascot.dmg">
+            <a className="text-link" href={macAppDmgUrl} download="Morphling.dmg">
               Download Mac App <span aria-hidden="true">↓</span>
             </a>
           </div>

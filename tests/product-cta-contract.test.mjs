@@ -21,9 +21,12 @@ test("all conversion surfaces use the product CTA contract", () => {
 test("product destinations are centralized and the Mac action is a DMG download", () => {
   const config = read("src/config.ts");
   assert.match(config, /agentMascotAppUrl\s*=\s*"https:\/\/app\.agentmascot\.app"/);
-  assert.match(config, /macAppDmgUrl\s*=\s*`\$\{agentMascotAppUrl\}\/downloads\/the-mascot\.dmg`/);
+  assert.match(
+    config,
+    /macAppDmgUrl\s*=\s*"https:\/\/coojbofwpebbwwqpefwr\.supabase\.co\/storage\/v1\/object\/public\/default-bucket\/Morphling\.dmg"/,
+  );
   assert.equal((componentSource.match(/from "\.\.\/config"/g) ?? []).length, 3);
-  assert.equal((componentSource.match(/download="The-Mascot\.dmg"/g) ?? []).length, 2);
+  assert.equal((componentSource.match(/download="Morphling\.dmg"/g) ?? []).length, 2);
 });
 
 test("the long header CTA is hidden at phone widths", () => {

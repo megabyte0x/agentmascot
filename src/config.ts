@@ -14,4 +14,4 @@ export const tallyUrl = (() => {
 })();
 
 export const agentMascotAppUrl = "https://app.agentmascot.app";
-export const macAppDmgUrl = `${agentMascotAppUrl}/downloads/the-mascot.dmg`;
+export const macAppDmgUrl = "https://coojbofwpebbwwqpefwr.supabase.co/storage/v1/object/public/default-bucket/Morphling.dmg";
