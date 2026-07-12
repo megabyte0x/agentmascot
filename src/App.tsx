@@ -1,6 +1,7 @@
 import { AgentStates } from "./components/AgentStates";
 import { BenefitStrip } from "./components/BenefitStrip";
 import { Compatibility } from "./components/Compatibility";
+import { Definition } from "./components/Definition";
 import { FinalCta } from "./components/FinalCta";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Definition />
         <BenefitStrip />
         <AgentStates />
         <HowItWorks />

@@ -1,4 +1,4 @@
-THE MASCOT
+AGENT MASCOT
 
 A mascot which will sit beside your agent locally on your system and calls you when an input is required. 
 
@@ -30,7 +30,7 @@ Technical Flow:
 
 ## Landing page development
 
-This repository contains a static React, Vite, TypeScript, and Tailwind CSS landing page for The Mascot.
+This repository contains a static React, Vite, TypeScript, and Tailwind CSS landing page for Agent Mascot.
 
 ### Local development
 
@@ -49,6 +49,8 @@ npm run build
 npm run preview -- --host 127.0.0.1
 ```
 
+The production build also renders the React landing page into `dist/index.html` so search and AI crawlers receive meaningful content without executing JavaScript. Canonical metadata and JSON-LD live in `index.html`; crawler guidance lives in `public/robots.txt`, `public/sitemap.xml`, and `public/llms.txt`.
+
 ### Cloudflare Pages deployment
 
 Create a Cloudflare Pages project using the **Vite** framework preset with:
@@ -60,4 +62,3 @@ Create a Cloudflare Pages project using the **Vite** framework preset with:
 The deployment URL is intentionally not hard-coded. Set the canonical and Open Graph URLs in `index.html` when the production Pages or custom-domain URL is known. Enable Cloudflare Web Analytics from the Cloudflare dashboard and add only the exact beacon snippet it supplies after confirming it does not affect the page's CTA behavior.
 
 Hero source media lives at `assets/haland_out.mov`; it is preserved locally and is not part of the browser-delivered build. Optimized derivatives are in `public/media/`.
-

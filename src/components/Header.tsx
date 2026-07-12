@@ -20,9 +20,9 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <a className="wordmark" href="#top" aria-label="The Mascot home">
+        <a className="wordmark" href="#top" aria-label="Agent Mascot home">
           <span className="wordmark__mark" aria-hidden="true">M</span>
-          <span>The Mascot</span>
+          <span>Agent Mascot</span>
         </a>
         <nav
           className={`site-nav ${menuOpen ? "site-nav--open" : ""}`}

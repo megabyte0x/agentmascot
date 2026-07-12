@@ -1,0 +1,13 @@
+# Agent Mascot
+> A personalized macOS desktop companion for local AI coding-agent workflows.
+
+## Canonical site
+- [Agent Mascot](https://agentmascot.app/): Product explanation, workflow states, demonstration, compatibility, and Mac download.
+
+## Product action
+- [Generate a personalized mascot](https://app.agentmascot.app): Open the official Agent Mascot application.
+
+## Key facts
+- Agent Mascot is designed to live beside a local AI coding-agent workflow on macOS.
+- The companion reflects whether the agent is idle, working, or needs input.
+- Morphling.dmg is the downloadable Agent Mascot desktop application for Mac.
