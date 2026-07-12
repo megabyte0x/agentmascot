@@ -11,7 +11,7 @@ export function AgentStates() {
       <div className="section-heading states__heading">
         <p className="kicker">Read the room</p>
         <h2 id="states-title">A clear state, without another dashboard.</h2>
-        <p>The Mascot communicates the part of your agent workflow that is easiest to miss when you are deep in the work.</p>
+        <p>Agent Mascot communicates the part of your agent workflow that is easiest to miss when you are deep in the work.</p>
       </div>
       <div className={`state-preview state-preview--${activeState + 1}`} aria-live="polite">
         <div className="state-preview__mascot" aria-hidden="true">

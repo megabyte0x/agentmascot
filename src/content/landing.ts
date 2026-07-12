@@ -15,7 +15,7 @@ export const benefits = [
     number: "03",
     title: "Make the companion your own",
     description:
-      "The Mascot is designed to feel like a personal presence alongside your local workflow.",
+      "Agent Mascot is designed to feel like a personal presence alongside your local workflow.",
   },
 ] as const;
 
@@ -41,7 +41,7 @@ export const agentStates = [
 ] as const;
 
 export const workflow = [
-  "Run The Mascot beside your coding-agent workflow.",
+  "Run Agent Mascot beside your coding-agent workflow.",
   "Let the companion reflect the agent's current state.",
   "Notice immediately when the agent needs intervention.",
 ] as const;
