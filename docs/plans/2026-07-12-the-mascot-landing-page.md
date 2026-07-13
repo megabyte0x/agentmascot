@@ -1,8 +1,8 @@
-# The Mascot Landing Page Implementation Plan
+# Agent Mascot Landing Page Implementation Plan
 
 > **For Hermes:** Use subagent-driven-development skill to implement this plan task-by-task.
 
-**Goal:** Build and deploy a polished single-page website that explains The Mascot to developers and opens the Tally waitlist in a new tab.
+**Goal:** Build and deploy a polished single-page website that explains Agent Mascot to developers and opens the Tally waitlist in a new tab.
 
 **Architecture:** A static React/Vite application will render the landing page and optimized hero media. Tally owns form submission, while Cloudflare Pages hosts the generated `dist/` directory and Cloudflare Web Analytics supplies aggregate traffic measurement. Convex and authentication are deliberately deferred until the product has account-based functionality.
 
@@ -62,7 +62,7 @@ ffmpeg -version
 
 ```bash
 git add .gitignore .nvmrc docs/plans README.md
-git commit -m "docs: define The Mascot landing page"
+git commit -m "docs: define Agent Mascot landing page"
 ```
 
 ---
@@ -275,7 +275,7 @@ export const tallyUrl = (() => {
 
 3. Configure the local development value in `.env.local`, which stays ignored by Git.
 4. Update `index.html` with:
-   - Title: `The Mascot — A desktop companion for your AI coding agent`
+   - Title: `Agent Mascot — A desktop companion for your AI coding agent`
    - Concise meta description
    - Canonical URL placeholder until the domain is known
    - Open Graph and X/Twitter metadata
@@ -315,7 +315,7 @@ git commit -m "feat: add landing page configuration and metadata"
   href={tallyUrl}
   target="_blank"
   rel="noopener noreferrer"
-  aria-label="Join The Mascot waitlist (opens in a new tab)"
+  aria-label="Join Agent Mascot waitlist (opens in a new tab)"
 >
   Join the waitlist
 </a>
@@ -356,7 +356,7 @@ git commit -m "feat: add page shell and waitlist navigation"
 Give your AI coding agent a personalized desktop companion.
 ```
 
-2. Add concise supporting copy explaining that The Mascot lives beside a local coding agent, reflects its current state, and makes requests for input visible.
+2. Add concise supporting copy explaining that Agent Mascot lives beside a local coding agent, reflects its current state, and makes requests for input visible.
 3. Add primary waitlist and secondary `#how-it-works` actions.
 4. Add a `useReducedMotion` hook using `window.matchMedia("(prefers-reduced-motion: reduce)")`, including change-listener cleanup.
 5. For ordinary motion preferences, render:
@@ -371,7 +371,7 @@ Give your AI coding agent a personalized desktop companion.
   width={1280}
   height={720}
   preload="metadata"
-  aria-label="The Mascot reacting beside an AI coding-agent workflow"
+  aria-label="Agent Mascot reacting beside an AI coding-agent workflow"
 >
   <source src="/media/the-mascot-demo.webm" type="video/webm" />
   <source src="/media/the-mascot-demo.mp4" type="video/mp4" />
@@ -419,7 +419,7 @@ git commit -m "feat: build product hero and demo loop"
    - Needs Input
 4. Keep state descriptions factual. Do not imply integrations or automation that are not implemented.
 5. Add the three-step workflow:
-   - Run The Mascot beside your coding-agent workflow.
+   - Run Agent Mascot beside your coding-agent workflow.
    - Let the companion reflect the agent's current state.
    - Notice immediately when the agent needs intervention.
 6. Add compatibility copy:

@@ -1,11 +1,11 @@
-# The Mascot Light UI Refresh
+# Agent Mascot Light UI Refresh
 
 **Date:** 2026-07-12  
 **Status:** Approved direction
 
 ## Goal
 
-Refresh the existing landing page into a brighter, softer, product-first experience inspired by the visual confidence of Hold My Lid while keeping The Mascot's own product identity, copy, information architecture, and waitlist flow.
+Refresh the existing landing page into a brighter, softer, product-first experience inspired by the visual confidence of Hold My Lid while keeping Agent Mascot's own product identity, copy, information architecture, and waitlist flow.
 
 ## Chosen Direction
 
@@ -14,12 +14,12 @@ The page will use a warm, macOS-adjacent editorial aesthetic:
 - A warm off-white canvas with pale lime and amber ambient glows
 - A floating capsule header instead of the current full-width dark bar
 - A centered, concise hero with the product promise as the dominant element
-- The mascot demo presented as a large desktop product stage below the hero copy
+- The Agent Mascot demo presented as a large desktop product stage below the hero copy
 - Dark ink typography, muted stone supporting text, and lime as the primary signal color
 - Rounded, softly elevated surfaces with precise borders and restrained shadows
 - Subtle entrance motion and state animation that respects reduced-motion preferences
 
-The design should feel friendly and physical without becoming childish. The mascot is the memorable product object; decorative effects remain secondary.
+The design should feel friendly and physical without becoming childish. Agent Mascot is the memorable product object; decorative effects remain secondary.
 
 ## Considered Approaches
 
@@ -109,4 +109,3 @@ Keep the current palette and only adopt floating navigation, centered compositio
 - Check browser console errors.
 - Confirm visible focus states and reduced-motion fallback.
 - Compare the refreshed page against the original for stronger hierarchy, product prominence, and cohesion.
-

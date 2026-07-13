@@ -4,11 +4,11 @@ A mascot which will sit beside your agent locally on your system and calls you w
 
 User Flow:
 - User signups 
-- Upload the images and generates the mascot
-- Pay for downloading the mascot locally 
+- Upload images to generate an Agent Mascot
+- Pay to download Agent Mascot locally
 - Download the application
 - Login into the app 
-- Select the mascot you generated 
+- Select the Agent Mascot you generated
 - Live with your buddy
 
 Technical Flow:

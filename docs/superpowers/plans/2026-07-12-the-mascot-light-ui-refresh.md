@@ -1,4 +1,4 @@
-# The Mascot Light UI Refresh Implementation Plan
+# Agent Mascot Light UI Refresh Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -43,7 +43,7 @@ Change `.site-header` from a full-width sticky bar into a sticky transparent con
 Add this presentation-only element between the wordmark and navigation:
 
 ```tsx
-<span className="header-status" aria-label="The Mascot is in development">
+<span className="header-status" aria-label="Agent Mascot is in development">
   <span className="status-dot" aria-hidden="true" /> in development
 </span>
 ```
@@ -75,7 +75,7 @@ Keep the video/poster conditional intact. Extend the media frame with a textual 
 ```tsx
 <div className="hero__media-bar" aria-hidden="true">
   <div className="window-dots"><span /><span /><span /></div>
-  <span className="window-title">The Mascot · agent companion</span>
+  <span className="window-title">Agent Mascot · agent companion</span>
 </div>
 <span className="floating-status floating-status--working"><i /> Agent working</span>
 <span className="floating-status floating-status--input"><i /> Needs input</span>
@@ -180,4 +180,3 @@ Expected: no React, asset-loading, or runtime errors attributable to the refresh
 Run: `npm run lint && npm run build`
 
 Expected: both commands exit 0 and the local browser reflects the finished UI.
-

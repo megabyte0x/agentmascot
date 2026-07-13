@@ -1,11 +1,11 @@
-# The Mascot Landing Page Design
+# Agent Mascot Landing Page Design
 
 **Date:** 2026-07-12
 **Status:** Approved
 
 ## Goal
 
-Create a polished single-page website that helps developers understand The Mascot and sends interested visitors to a Tally waitlist form.
+Create a polished single-page website that helps developers understand Agent Mascot and sends interested visitors to a Tally waitlist form.
 
 The primary product promise is:
 
@@ -22,7 +22,7 @@ The landing page will include:
 1. A compact header with anchor navigation and a waitlist CTA.
 2. A hero section with the product promise, supporting copy, CTA, and autoplaying muted demo loop.
 3. A three-benefit value strip.
-4. An explanation of the mascot's Idle, Working, and Needs Input states.
+4. An explanation of Agent Mascot's Idle, Working, and Needs Input states.
 5. A short How It Works section.
 6. Compatibility messaging led by Hermes and Codex.
 7. A final waitlist CTA.
@@ -97,7 +97,7 @@ If optimized local media remains too large for acceptable page performance, a sh
 
 ### Header
 
-- The Mascot wordmark
+- Agent Mascot wordmark
 - How It Works, States, and Waitlist anchors
 - Join the Waitlist CTA
 
@@ -125,7 +125,7 @@ Each state will have concise explanatory copy and use available media without cl
 
 ### How It Works
 
-1. Run The Mascot beside a supported coding-agent workflow.
+1. Run Agent Mascot beside a supported coding-agent workflow.
 2. The companion reflects the agent's current state.
 3. Receive an obvious visual cue when intervention is needed.
 
