@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 
 const read = (file) => readFileSync(new URL(`../${file}`, import.meta.url), "utf8");
+const legacyProductName = ["The", "Mascot"].join(" ");
 
 test("publishes Agent Mascot canonical metadata and linked schema", () => {
   const html = read("index.html");
@@ -13,7 +14,7 @@ test("publishes Agent Mascot canonical metadata and linked schema", () => {
   for (const type of ["Organization", "WebSite", "WebPage", "SoftwareApplication", "VideoObject"]) {
     assert.match(html, new RegExp(`"@type": "${type}"`));
   }
-  assert.doesNotMatch(html, />The Mascot<|content="The Mascot|<title[^>]*>The Mascot/);
+  assert.doesNotMatch(html, new RegExp(`>${legacyProductName}<|content="${legacyProductName}|<title[^>]*>${legacyProductName}`));
 });
 
 test("publishes crawler, sitemap, and llms guidance", () => {
@@ -54,9 +55,10 @@ test("uses Agent Mascot consistently in public-facing source", () => {
     "src/components/Hero.tsx",
     "src/components/Footer.tsx",
     "src/content/landing.ts",
-    "public/favicon.svg",
+    "index.html",
   ];
   for (const file of files) {
-    assert.doesNotMatch(read(file), /The Mascot/, `${file} uses the legacy name`);
+    assert.doesNotMatch(read(file), new RegExp(legacyProductName), `${file} uses the legacy name`);
   }
+  assert.match(read("index.html"), /href="\/favicon\.png"/);
 });

@@ -21,7 +21,7 @@ export function Header() {
     <header className="site-header">
       <div className="site-header__inner">
         <a className="wordmark" href="#top" aria-label="Agent Mascot home">
-          <span className="wordmark__mark" aria-hidden="true">M</span>
+          <img className="wordmark__mark" src="/agent-mascot-mark.png" alt="" aria-hidden="true" />
           <span>Agent Mascot</span>
         </a>
         <nav

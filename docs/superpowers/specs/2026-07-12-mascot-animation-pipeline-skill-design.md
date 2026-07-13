@@ -59,7 +59,7 @@ Generate office scenes directly from the original image and omit the clean masco
 - Generate three candidates by default, with a user-configurable count.
 - Preserve face, hairstyle, skin tone, clothing, accessories, athletic or body proportions, shoes, socks, and overall silhouette.
 - Preserve simplified original clothing numbers, patterns, and marks while forbidding invented text or branding.
-- Place the mascot on an office chair at a modern wooden desk, typing with both hands on a clean aluminum laptop.
+- Place Agent Mascot on an office chair at a modern wooden desk, typing with both hands on a clean aluminum laptop.
 - Keep the complete body, desk, chair, laptop, legs, and feet visible with stable, believable geometry.
 - Keep the chroma background perfectly uniform and the composition suitable for animation.
 - Pause after generation and require the user to select the canonical office scene.
@@ -75,9 +75,9 @@ Create three prompts by default, with a user-configurable count. The default mot
 Every prompt must:
 
 - Use the selected office scene as the exact visual reference.
-- Preserve the mascot's design, proportions, colors, face, clothing, desk, laptop, framing, lighting, and background.
+- Preserve Agent Mascot's design, proportions, colors, face, clothing, desk, laptop, framing, lighting, and background.
 - Keep the camera completely locked with no zoom, pan, shake, or rotation.
-- Restrict movement to the mascot's hands, wrists, eyes, eyelids, head, breathing, subtle body shifts, facial expression, and interactions with the laptop.
+- Restrict movement to Agent Mascot's hands, wrists, eyes, eyelids, head, breathing, subtle body shifts, facial expression, and interactions with the laptop.
 - Keep the desk, chair, laptop position, chroma field, perspective, and constant screen glow stable and flicker-free.
 - Target a smooth, seamless loop of approximately 5–10 seconds.
 - Avoid object deformation, exaggerated cartoon motion, regenerated scenery, identity drift, and appearance changes.
@@ -87,7 +87,7 @@ The skill produces ready-to-paste video prompts because no video-generation tool
 ## Shared Variables and Invariants
 
 - `{{CHROMA_COLOR}}` defaults to `#00FF00`.
-- If the chosen key color materially appears in the mascot, select a contrasting configurable color such as `#FF00FF` to preserve subject colors and enable clean extraction.
+- If the chosen key color materially appears in Agent Mascot, select a contrasting configurable color such as `#FF00FF` to preserve subject colors and enable clean extraction.
 - Stage counts default to three and remain configurable independently.
 - Reuse one identity-lock block across every stage.
 - Treat original clothing marks as identity details; prohibit only invented logos, text, and decorative elements.
